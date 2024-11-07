@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.color{
+    color: #e46d32;
+}
+
+.navbar {
+    background-color: #333;     
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    image-rendering: auto;
+    mask-image: url(/img/maxresdefault.jpg) ;
+}
+
+/* Liste de navigation */
+.nav-links {
+    list-style-type: none; /* Supprime les puces de liste */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Place les éléments en ligne */
+}
+
+/* Liens de navigation */
+.nav-links li {
+    position: relative; /* Nécessaire pour positionner le dropdown */
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none; /* Supprime le soulignement */
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: background 0.3s; /* Transition douce pour l'effet de survol */
+}
+
+/* Effet de survol */
+.nav-links li a:hover {
+    background-color: #555;
+    color:#e46d32
+    border-radius: 4px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+video {
+    display: flex;
+    justify-content: center;
+}
+
+card {
+
+}
+
