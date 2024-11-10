@@ -1,28 +1,43 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+
 }
+
 
 .color{
     color: #e46d32;
 }
 
 .navbar {
-    background-color: #333;     
-    padding: 10px 20px;
+    background-color: #282729;     
+    padding: 20px 40px;
     display: flex;
     justify-content: space-between;
+    align-items: center;    
+}
+
+.navbar .logo  {
+    display: flex;
     align-items: center;
+    justify-content: end;
 }
 
 /* Logo */
-.navbar .logo {
-    font-size: 24px;
-    font-weight: bold;
-    image-rendering: auto;
-    mask-image: url(/img/maxresdefault.jpg) ;
+.navbar .logo img {
+    width: 60px;         /* Largeur de l'image */
+    height: auto;         /* Hauteur automatique pour conserver les proportions */
+    image-rendering: auto; /* Option pour lissage d'image */
+    border-radius: 10px;
+    align-items: center;
 }
 
+.navbar .logo a {
+    padding-left: 24px;
+    font-size: clamp(16px, 2vw, 24px);
+}
 /* Liste de navigation */
 .nav-links {
     list-style-type: none; /* Supprime les puces de liste */
@@ -39,16 +54,19 @@ body {
 
 .nav-links li a {
     text-decoration: none; /* Supprime le soulignement */
-    font-size: 18px;
+    font-size: clamp(16px, 2vw, 24px);
     padding: 8px 12px;
     transition: background 0.3s; /* Transition douce pour l'effet de survol */
+    border-radius: 10px;
+    color: #7c33d5;
 }
 
 /* Effet de survol */
 .nav-links li a:hover {
     background-color: #555;
-    color:#e46d32
-    border-radius: 4px;
+    color:#9c9b9d;
+    transition: 0.3s;
+    font-size: xx-large;
 }
 
 h1 {
@@ -56,12 +74,64 @@ h1 {
     justify-content: center;
 }
 
-video {
-    display: flex;
-    justify-content: center;
+/* Styling for the card */
+.card-video {
+    width: 700px;
+    max-width: 100%;
+    margin: 20px auto;
+    border-radius: 30px;
+    overflow: hidden; 
+    box-shadow: 10px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.7s ease, box-shadow 0.7s ease;
+    background-color: #fff;
 }
 
-card {
-
+/* Add a subtle hover effect */
+.card-video:hover {
+    transform: translateY(-10px);
+    box-shadow: 20px 10px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Video content styling */
+.video-content {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Card content area */
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Title styling */
+.card-title {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Description styling */
+.card-description {
+    font-size: 1em;
+    color: #667;
+    margin-bottom: 15px;
+}
+
+/* Button styling */
+.card-button {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 1em;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+    background-color: #0056b3;
+}
