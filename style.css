@@ -46,6 +46,10 @@ body {
     display: flex; /* Place les éléments en ligne */
 }
 
+.nav-links ul {
+    transition: transform 0.3s ease;
+}
+
 /* Liens de navigation */
 .nav-links li {
     position: relative; /* Nécessaire pour positionner le dropdown */
@@ -56,17 +60,16 @@ body {
     text-decoration: none; /* Supprime le soulignement */
     font-size: clamp(16px, 2vw, 24px);
     padding: 8px 12px;
-    transition: background 0.3s; /* Transition douce pour l'effet de survol */
     border-radius: 10px;
-    color: #7c33d5;
+    color: #5c2699;
+    transition: background 0.7s ease, color 0.7s ease, transform 0.7s ease; /* Transition fluide */
 }
 
 /* Effet de survol */
 .nav-links li a:hover {
     background-color: #555;
-    color:#9c9b9d;
-    transition: 0.3s;
-    font-size: xx-large;
+    color: #ab6bf4;
+    transform: scale(1.2); /* Applique un léger zoom sans changer la taille de la police */
 }
 
 h1 {
@@ -135,3 +138,4 @@ h1 {
 .card-button:hover {
     background-color: #0056b3;
 }
+
