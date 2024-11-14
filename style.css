@@ -3,6 +3,9 @@ body {
     font-family: Arial, sans-serif;
     justify-content: center;
     align-items: center;
+}
+
+footer {
     background-image: url("/img/IMG_5870.jpg");
     background-size: cover;
     background-position: center;
