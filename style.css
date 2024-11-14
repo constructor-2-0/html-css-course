@@ -6,6 +6,12 @@ body {
 
 }
 
+.background-button {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    
+}
 
 .color{
     color: #e46d32;
