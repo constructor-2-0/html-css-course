@@ -46,10 +46,53 @@ footer {
     align-items: center;
 }
 
-.navbar .logo a {
-    padding-left: 24px;
-    font-size: clamp(16px, 2vw, 24px);
+
+
+/* Bouton pour afficher/cacher le menu */
+#menu-btn {
+    background-color: #7c33d5;
+    color: white;
+    padding-left: 4px;
+    font-size: clamp(20px, 1.1vw, 2px);
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    z-index: 2;
+    border-radius: 10px;
+    left: 120px;
 }
+
+/* Menu latéral (sidebar) */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Initialement hors de la vue */
+    width: 250px;
+    height: 100%;
+    background-color: #f9f9f9;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    transition: left 0.3s ease; /* Animation pour l'apparition */
+    padding: 20px;
+    z-index: 1;
+}
+
+/* Liens dans la sidebar */
+.sidebar a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
+}
+
+.sidebar a:hover {
+    background-color: #7c33d5;
+    color: white;
+    border-radius: 5px;
+}
+
 /* Liste de navigation */
 .nav-links {
     list-style-type: none; /* Supprime les puces de liste */

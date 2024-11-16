@@ -4,26 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freeze cordon bleu</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">    
 </head>
 <body>
     <header class="color">
         <!-- Barre de navigation -->
         <nav class="navbar">
             <div class="logo">
-                <img src="/img/1200x1200bb.jpg" alt="Freeze"> <a> <button class="color"> Menu </button> </a></div>
+                <img src="img/1200x1200bb.jpg" alt="Freeze"> 
+                        <button id="menu-btn"> ☰Menu</button>
+                        <div id="sidebar" class="sidebar">
+                            <button id="close-btn" class="close-btn">X</button> <!-- Bouton pour fermer la sidebar -->
+                            <ul>
+                                <li><a href="#">Accueil</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                
+            </div>
+        
             <ul class="nav-links">
                 <li><a href="#home">Accueil</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#about">À propos</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="/test.html">site de Test</a></li>
             </ul>
         </nav>
     </header>
     <h1 class="h1">Bienvenue sur le site de Freeze cordon bleu</h1>
     <div class="card-video">
         <video class="video-content" controls>
-            <source src="/img/Kalash Criminel (Ft. Freeze Corleone) - ENCORE LES PROBLÈMES (Clip officiel).mp4" type="video/mp4">
+            <source src="img/Kalash Criminel (Ft. Freeze Corleone) - ENCORE LES PROBLÈMES (Clip officiel).mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         <div class="card-content">
@@ -34,7 +47,7 @@
     </div>
     
     <footer>
-        <img src="/img/IMG_5870.jpg">
     </footer>
+    <script src="script.js" type="module"></script>
 </body>
 </html>     
