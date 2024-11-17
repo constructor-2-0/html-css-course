@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const sidebarLeft = window.getComputedStyle(sidebar).left;
 
         if (sidebarLeft === '0px') {
-            sidebar.style.left = '-250px'; // Cache la sidebar
+            sidebar.style.left = '-290px'; // Cache la sidebar
         } else {
             sidebar.style.left = '0px'; // Affiche la sidebar
         }
@@ -16,6 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Fonction pour fermer la sidebar
     closeBtn.addEventListener('click', function() {
-        sidebar.style.left = '-250px'; // Cache la sidebar
+        sidebar.style.left = '-290px'; // Cache la sidebar
     });
 });
