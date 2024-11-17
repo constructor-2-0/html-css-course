@@ -1,26 +1,30 @@
-.element {
-    background: #fff;
-    border-radius: 10px;
-    position: relative;
-    padding: 20px;
-    overflow: hidden;
-    transition: box-shadow 0.3s ease;
+body,
+html {
+  overflow: hidden;
 }
 
-.element:hover {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Effet visuel supplémentaire */
+body {
+  background: #000;
 }
 
-.border-bottom {
-    width: 100%;
-    height: 1px;
-    background-color: #ddd;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: background-color 0.3s ease;
+.container {
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
 }
 
-.element:hover .border-bottom {
-    background-color: #aaa;
+.scrolling-text {
+  display: inline-block;
+  transition: transform 0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+.scrolling-text .scrolling-text-content {
+  color: #fff;
+  font-size: 120px;
+  white-space: nowrap;
+  transition: transform 0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
+  line-height: 1em;
+  margin: 50px 0;
 }

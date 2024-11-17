@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    background-image: url('img/nepal/445anime.gif'); /* Remplace par ton chemin d'image */
+    padding: 0;
+    background-size: 100% auto; /* Ajuste la taille sans déformer */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Pas de répétition */
+    height: 100vh; /* Hauteur de la fenêtre */
+    width: 100vw; /* Largeur de la fenêtre */
+    image-rendering: optimizeQuality; /* Optimise le rendu */
+    -webkit-backface-visibility: hidden; /* Réduit les artefacts sur certains navigateurs */
+    -webkit-transform: translateZ(0); /* Active le rendu GPU pour lisser */
+}
+
+footer {
+    background-image: url("/img/IMG_5870.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.background-img body div img {
+    background-image: url("/img/nepal/download.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.background-button {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    
+}
+
+.color{
+    color: #e46d32;
+}
+
+.navbar {
+    background: linear-gradient(70deg, 
+        #b04737, 
+        #08b5a1, 
+        #06605f, 
+        #060d0f, 
+        #057a89, 
+        #5c2720, 
+        #0b3733, 
+        #043e51, 
+        #05212f, 
+        #058c54
+    );    
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.navbar .logo  {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+/* Logo */
+.navbar .logo img {
+    width: 60px;         /* Largeur de l'image */
+    height: auto;         /* Hauteur automatique pour conserver les proportions */
+    image-rendering: auto; /* Option pour lissage d'image */
+    border-radius: 10px;
+    align-items: center;
+}
+
+/* Liste de navigation */
+.nav-links {
+    list-style-type: none; /* Supprime les puces de liste */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Place les éléments en ligne */
+}
+
+.nav-links ul {
+    transition: transform 0.3s ease;
+}   
+
+/* Liens de navigation */
+.nav-links li {
+    position: relative; /* Nécessaire pour positionner le dropdown */
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none; /* Supprime le soulignement */
+    font-size: clamp(16px, 2vw, 24px);
+    padding: 8px 12px;
+    border-radius: 10px;
+    color: #1d070a;
+    transition: background 0.7s ease, color 0.7s ease, transform 0.7s ease; /* Transition fluide */
+}
+
+/* Effet de survol */
+.nav-links li a:hover {
+    background-color:rgba(85, 85, 85, 0.3);
+    color: #ab6bf4;
+    transform: scale(1.2); /* Applique un léger zoom sans changer la taille de la police */
+}
+
+/* Bouton pour afficher/cacher le menu */
+#menu-btn {
+    background-color: #c83f47;
+    color: white;
+    padding-left: 10px;
+    font-size: clamp(20px, 1.5vw, 2px);
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    z-index: 2;
+    border-radius: 10px;
+    left: 120px;
+    top: 27px;
+}
+
+.menu-button {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    background-color: #7c33d5;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+/* Styling for the card */
+.card-video {
+    width: 1000px;
+    max-width: 100%;
+    margin: 20px auto;
+    border-radius: 30px;
+    overflow: hidden; 
+    box-shadow: 10px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.7s ease, box-shadow 0.7s ease;
+    background-color: rgba(85, 85, 85, 0.3);
+}
+
+.card-video:hover {
+    transform: translateY(-10px);
+    box-shadow: 20px 10px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Video content styling */
+.video-content {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Card content area */
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Title styling */
+.card-title {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Description styling */
+.card-description {
+    font-size: 1em;
+    color: #667;
+    margin-bottom: 15px;
+}
+
+/* Button styling */
+.card-button {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 1em;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+    background-color: #0056b3;
+}

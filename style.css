@@ -46,21 +46,146 @@ footer {
     align-items: center;
 }
 
-
-
 /* Bouton pour afficher/cacher le menu */
 #menu-btn {
     background-color: #7c33d5;
     color: white;
-    padding-left: 6px;
-    font-size: clamp(26px, 1.5vw, 2px);
+    padding-left: 10px;
+    font-size: clamp(20px, 1.5vw, 2px);
     border: none;
     cursor: pointer;
     position: fixed;
     z-index: 2;
     border-radius: 10px;
     left: 120px;
+    top: 27px;
+}   
+
+.menu-hidden {
+    opacity: 0; /* Rendre le bouton invisible */
+    pointer-events: none; /* Désactiver les clics */
+    transition: opacity 0.25s ease;
 }
+
+/* From Uiverse.io by xopc333 */ 
+.button {
+    display: block;
+    position: relative;
+    width: 56px;
+    height: 56px;
+    margin: 0;
+    overflow: hidden;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
+  }
+  
+/* Bouton pour afficher la sidebar */
+.menu-button {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    background-color: #7c33d5;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+/* Bouton stylisé pour fermer */
+.button {
+    display: block;
+    position: relative;
+    width: 56px;
+    height: 56px;
+    margin: 0;
+    overflow: hidden;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
+    z-index: 3;
+}
+
+.button:before,
+.button:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    inset: 7px;
+}
+
+.button:before {
+    border: 4px solid #f0eeef;
+    transition: opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1) 80ms,
+        transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
+}
+
+.button:after {
+    border: 4px solid #96daf0;
+    transform: scale(1.3);
+    transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+        transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    opacity: 0;
+}
+
+.button:hover:before,
+.button:focus:before {
+    opacity: 0;
+    transform: scale(0.7);
+    transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+        transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.button:hover:after,
+.button:focus:after {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1) 80ms,
+        transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
+}
+
+.button-box {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.button-elem {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 17px 18px 0 18px;
+    transform: rotate(180deg);
+    fill: #f0eeef;
+}
+
+.button:hover .button-box,
+.button:focus .button-box {
+    transition: 0.4s;
+    transform: translateX(-56px);
+}
+
+  
+
+/* Effet au survol */
+.close-btn:hover {
+    background-color: #ab6bf4; /* Change la couleur au hover */
+    transform: scale(1.2); /* Légère mise en avant */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Ombre plus forte */
+}
+
+/* Effet au clic */
+.close-btn:active {
+    transform: scale(1); /* Annule l'agrandissement au clic */
+    background-color: #5c2699; /* Couleur plus foncée */
+}
+
 
 /* Sidebar (menu latéral) */
 .sidebar {
@@ -84,7 +209,9 @@ footer {
     text-decoration: none;
     padding: 15px 0;
     font-size: 18px;
-    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    border-bottom: solid;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease, border-radius 0.3s ease; 
 }
 
 .sidebar li a:hover {
@@ -92,17 +219,7 @@ footer {
     color: #ab6bf4;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Border-bottom element */
-.border-bottom {
-    width: 100%;
-    height: 1px;
-    background-color: #ddd;
-    position: absolute;
-    bottom: 0; /* Positionné au bas du parent */
-    left: 0;
-    transition: background-color 0.3s ease;
+    transform: scale(1);
 }
 
 /* Liste de navigation */
@@ -115,7 +232,7 @@ footer {
 
 .nav-links ul {
     transition: transform 0.3s ease;
-}
+}   
 
 /* Liens de navigation */
 .nav-links li {
@@ -134,7 +251,7 @@ footer {
 
 /* Effet de survol */
 .nav-links li a:hover {
-    background-color: #555;
+    background-color:rgba(85, 85, 85, 0.3);
     color: #ab6bf4;
     transform: scale(1.2); /* Applique un léger zoom sans changer la taille de la police */
 }

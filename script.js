@@ -1,21 +1,17 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const menuBtn = document.getElementById('menu-btn');
-    const sidebar = document.getElementById('sidebar');
-    const closeBtn = document.getElementById('close-btn');
+// Sélection des éléments
+const menuButton = document.getElementById('menu-btn'); // Bouton pour afficher la sidebar
+const button = document.getElementById('button');  // Bouton stylisé pour fermer la sidebar
+const sidebar = document.querySelector('.sidebar');     // Élément de la sidebar
 
-    menuBtn.addEventListener('click', function() {
-        // Vérifie la position actuelle de la sidebar
-        const sidebarLeft = window.getComputedStyle(sidebar).left;
-
-        if (sidebarLeft === '0px') {
-            sidebar.style.left = '-290px'; // Cache la sidebar
-        } else {
-            sidebar.style.left = '0px'; // Affiche la sidebar
-        }
-    });
-
-    // Fonction pour fermer la sidebar
-    closeBtn.addEventListener('click', function() {
-        sidebar.style.left = '-290px'; // Cache la sidebar
-    });
+// Afficher la sidebar et cacher le bouton menu
+menuButton.addEventListener('click', () => {
+    sidebar.style.left = '0'; // Glisse la sidebar à l'écran
+    menuButton.style.display = 'none'; // Cache le bouton menu
 });
+
+// Cacher la sidebar et réafficher le bouton menu
+button.addEventListener('click', () => {
+    sidebar.style.left = '-300px'; // Cache la sidebar hors de l'écran
+    menuButton.style.display = 'block'; // Affiche à nouveau le bouton menu
+});
+
