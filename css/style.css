@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     justify-content: center;
     align-items: center;
-    background-image: url('img/freezeclip.gif'); /* Remplace par ton chemin d'image */
+    background-image: url('../img/freeze/freezeclip.gif'); /* Remplace par ton chemin d'image */
     padding: 0;
     background-size: 100% auto; /* Ajuste la taille sans déformer */
     background-position: center; /* Centre l'image */
@@ -16,12 +16,17 @@ body {
 }
 
 footer {
-    background-image: url("/img/IMG_5870.jpg");
+    background-image: url("../img/IMG_5870.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-z
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color:#7c33d5;
+}
 
 .background-button {
     background-color: transparent;
@@ -265,11 +270,6 @@ z
     background-color:rgba(85, 85, 85, 0.3);
     color: #ab6bf4;
     transform: scale(1.2); /* Applique un léger zoom sans changer la taille de la police */
-}
-
-h1 {
-    display: flex;
-    justify-content: center;
 }
 
 /* Styling for the card */

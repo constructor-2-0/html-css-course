@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     justify-content: center;
     align-items: center;
-    background-image: url('img/nepal/népal-daruma.gif'); /* Remplace par ton chemin d'image */
+    background-image: url('../img/nekfeu/f692d58663200b0a37cd258341755a71.1000x1000x1.jpg'); /* Remplace par ton chemin d'image */
     padding: 0;
     background-size: 100% auto; /* Ajuste la taille sans déformer */
     background-position: center; /* Centre l'image */
@@ -16,7 +16,7 @@ body {
 }
 
 footer {
-    background-image: url("/img/IMG_5870.jpg");
+    background-image: url("../img/IMG_5870.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -25,6 +25,7 @@ footer {
 h1 {
     display: flex;
     justify-content: center;
+    color: #058c54;
 }
 
 .background-button {
@@ -39,17 +40,18 @@ h1 {
 }
 
 .navbar {
-    background: linear-gradient(70deg, 
-        #b04737, 
-        #08b5a1, 
-        #06605f, 
-        #060d0f, 
-        #057a89, 
-        #5c2720, 
-        #0b3733, 
-        #043e51, 
-        #05212f, 
-        #058c54
+    background: linear-gradient(120deg, 
+        #c8c0c1,
+        #5d949a,
+        #c53763,
+        #615160,
+        #2a535e,
+        #040404,
+        #537489,
+        #263748,
+        #352330,
+        #172a32
+
     );    
     padding: 20px 40px;
     display: flex;
