@@ -62,9 +62,9 @@ footer {
 }   
 
 .menu-hidden {
+    transition: opacity 0.25s ease;
     opacity: 0; /* Rendre le bouton invisible */
     pointer-events: none; /* Désactiver les clics */
-    transition: opacity 0.25s ease;
 }
 
 /* From Uiverse.io by xopc333 */ 
