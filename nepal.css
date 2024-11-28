@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     justify-content: center;
     align-items: center;
-    background-image: url('img/nepal/445anime.gif'); /* Remplace par ton chemin d'image */
+    background-image: url('img/nepal/népal-daruma.gif'); /* Remplace par ton chemin d'image */
     padding: 0;
     background-size: 100% auto; /* Ajuste la taille sans déformer */
     background-position: center; /* Centre l'image */
@@ -20,6 +20,11 @@ footer {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
 }
 
 .background-button {
