@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     justify-content: center;
     align-items: center;
-    background-image: url('../img/nekfeu/f692d58663200b0a37cd258341755a71.1000x1000x1.jpg'); /* Remplace par ton chemin d'image */
+    background-image: url('../img/nekfeu/nekfeu-ia.gif'); /* Remplace par ton chemin d'image */
     padding: 0;
     background-size: 100% auto; /* Ajuste la taille sans déformer */
     background-position: center; /* Centre l'image */
@@ -25,7 +25,7 @@ footer {
 h1 {
     display: flex;
     justify-content: center;
-    color: #058c54;
+    color: #5d949a;
 }
 
 .background-button {
@@ -97,20 +97,20 @@ h1 {
     font-size: clamp(16px, 2vw, 24px);
     padding: 8px 12px;
     border-radius: 10px;
-    color: #2596be;
+    color: #537489;
     transition: background 0.7s ease, color 0.7s ease, transform 0.7s ease; /* Transition fluide */
 }
 
 /* Effet de survol */
 .nav-links li a:hover {
     background-color:rgba(85, 85, 85, 0.3);
-    color: #03c8aa;
+    color: #5d949a;
     transform: scale(1.2); /* Applique un léger zoom sans changer la taille de la police */
 }
 
 /* Bouton pour afficher/cacher le menu */
 #menu-btn {
-    background-color: #c83f47;
+    background-color: #c53763;
     color: white;
     padding-left: 10px;
     font-size: clamp(20px, 1.5vw, 2px);
