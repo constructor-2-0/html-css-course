@@ -200,14 +200,9 @@ p {
     position: fixed;
     top: 15px;
     left: 15px;
-    background-color: #7c33d5;
-    color: white;
     border: none;
     border-radius: 10px;
     padding: 10px 15px;
-    font-size: 20px;
-    cursor: pointer;
-    z-index: 3;
 }
 
 /* From Uiverse.io by xopc333 */ 
@@ -223,36 +218,6 @@ p {
     cursor: pointer;
     border: 0;
   }
-  
-/* Bouton pour afficher la sidebar */
-.menu-button {
-    position: fixed;
-    top: 15px;
-    left: 15px;
-    background-color: #7c33d5;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 15px;
-    font-size: 20px;
-    cursor: pointer;
-    z-index: 3;
-}
-
-/* Bouton stylisé pour fermer */
-.button {
-    display: block;
-    position: relative;
-    width: 56px;
-    height: 56px;
-    margin: 0;
-    overflow: hidden;
-    outline: none;
-    background-color: transparent;
-    cursor: pointer;
-    border: 0;
-    z-index: 3;
-}
 
 .button:before,
 .button:after {
@@ -348,7 +313,7 @@ p {
 /* Liens dans la sidebar */
 .sidebar li a {
     display: block;
-    color: #2596be;
+    color: #537489;
     text-decoration: none;
     padding: 15px 0;
     font-size: 18px;
@@ -359,7 +324,7 @@ p {
 
 .sidebar li a:hover {
     background-color: #555;
-    color: #03c8aa;
+    color: #5d949a;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transform: scale(1);

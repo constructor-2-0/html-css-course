@@ -185,14 +185,9 @@ p {
     position: fixed;
     top: 15px;
     left: 15px;
-    background-color: #c83f47;
-    color: white;
     border: none;
     border-radius: 10px;
     padding: 10px 15px;
-    font-size: 20px;
-    cursor: pointer;
-    z-index: 3;
 }
 
 /* From Uiverse.io by xopc333 */ 
