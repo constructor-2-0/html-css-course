@@ -3,8 +3,11 @@ body {
     font-family: Arial, sans-serif;
     justify-content: center;
     align-items: center;
-    background-image: url('../img/nepal/népal-daruma.gif'); /* Remplace par ton chemin d'image */
+    background: url('../img/nepal/népal-daruma.gif') no-repeat center center fixed;
+    background-size: cover;
+    overflow-x: hidden;
     padding: 0;
+    overflow-y: scroll;
     background-size: 100% auto; /* Ajuste la taille sans déformer */
     background-position: center; /* Centre l'image */
     background-repeat: no-repeat; /* Pas de répétition */
@@ -15,17 +18,73 @@ body {
     -webkit-transform: translateZ(0); /* Active le rendu GPU pour lisser */
 }
 
-footer {
-    background-image: url("../img/IMG_5870.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+#footer {   
+    background: linear-gradient(240deg, 
+    #b04737, 
+    #08b5a1, 
+    #06605f, 
+    #060d0f, 
+    #057a89, 
+    #5c2720, 
+    #0b3733, 
+    #043e51, 
+    #05212f, 
+    #058c54
+    
+    );
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
 }
 
 h1 {
     display: flex;
     justify-content: center;
     color: #058c54;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Conteneur du texte */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Fond semi-transparent pour le texte */
+    border-radius: 10px;
+}       
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #5c2720;
+}
+
+/* Style pour les paragraphes */
+p {
+    font-size: 1rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #058c54, #08b5a1, #057a89, #06605f, #043e51);
+    -webkit-background-clip: text; /* Clip le dégradé au texte */
+    -webkit-text-fill-color: transparent; /* Remplit le texte de transparence */
+    background-clip: text; /* Pour les navigateurs modernes */
+    text-fill-color: transparent; /* Remplit le texte de transparence */
+}
+
+/* Style pour les listes */
+.container ul {
+    margin: 20px 0;
+    padding-left: 20px;
+    background: linear-gradient(90deg, #058c54, #08b5a1, #057a89, #06605f, #043e51);
+    -webkit-background-clip: text; /* Clip le dégradé au texte */
+    -webkit-text-fill-color: transparent; /* Remplit le texte de transparence */
+    background-clip: text; /* Pour les navigateurs modernes */
+    text-fill-color: transparent; /* Remplit le texte de transparence */
+}
+
+.container li {
+    margin: 5px 0;
 }
 
 .background-button {
@@ -126,7 +185,7 @@ h1 {
     position: fixed;
     top: 15px;
     left: 15px;
-    background-color: #7c33d5;
+    background-color: #c83f47;
     color: white;
     border: none;
     border-radius: 10px;
@@ -148,36 +207,6 @@ h1 {
     background-color: transparent;
     cursor: pointer;
     border: 0;
-  }
-  
-/* Bouton pour afficher la sidebar */
-.menu-button {
-    position: fixed;
-    top: 15px;
-    left: 15px;
-    background-color: #7c33d5;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 15px;
-    font-size: 20px;
-    cursor: pointer;
-    z-index: 3;
-}
-
-/* Bouton stylisé pour fermer */
-.button {
-    display: block;
-    position: relative;
-    width: 56px;
-    height: 56px;
-    margin: 0;
-    overflow: hidden;
-    outline: none;
-    background-color: transparent;
-    cursor: pointer;
-    border: 0;
-    z-index: 3;
 }
 
 .button:before,
@@ -240,8 +269,6 @@ h1 {
     transform: translateX(-56px);
 }
 
-  
-
 /* Effet au survol */
 .close-btn:hover {
     background-color: #ab6bf4; /* Change la couleur au hover */
@@ -254,7 +281,6 @@ h1 {
     transform: scale(1); /* Annule l'agrandissement au clic */
     background-color: #5c2699; /* Couleur plus foncée */
 }
-
 
 /* Sidebar (menu latéral) */
 .sidebar {

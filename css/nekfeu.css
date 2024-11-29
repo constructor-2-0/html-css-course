@@ -15,11 +15,23 @@ body {
     -webkit-transform: translateZ(0); /* Active le rendu GPU pour lisser */
 }
 
-footer {
-    background-image: url("../img/IMG_5870.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+#footer {   
+    background: linear-gradient(240deg, 
+        #c8c0c1,
+        #5d949a,
+        #c53763,
+        #615160,
+        #2a535e,
+        #040404,
+        #537489,
+        #263748,
+        #352330,
+        #172a32
+
+    );
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
 }
 
 h1 {

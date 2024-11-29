@@ -3,8 +3,11 @@ body {
     font-family: Arial, sans-serif;
     justify-content: center;
     align-items: center;
-    background-image: url('../img/freeze/freezeclip.gif'); /* Remplace par ton chemin d'image */
+    background: url('../img/freeze/freezeclip.gif') no-repeat center center fixed;
+    background-size: cover;
+    overflow-x: hidden;
     padding: 0;
+    overflow-y: scroll;
     background-size: 100% auto; /* Ajuste la taille sans déformer */
     background-position: center; /* Centre l'image */
     background-repeat: no-repeat; /* Pas de répétition */
@@ -15,17 +18,60 @@ body {
     -webkit-transform: translateZ(0); /* Active le rendu GPU pour lisser */
 }
 
-footer {
-    background-image: url("../img/IMG_5870.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+#footer {   
+    background: #282729;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
 }
 
 h1 {
     display: flex;
     justify-content: center;
     color:#7c33d5;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+/* Conteneur du texte */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Fond semi-transparent pour le texte */
+    border-radius: 10px;
+}       
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #623796;
+}
+
+/* Style pour les paragraphes */
+p {
+    font-size: 1rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ab6bf4, #7c33d5, #5c2699);
+    -webkit-background-clip: text; /* Clip le dégradé au texte */
+    -webkit-text-fill-color: transparent; /* Remplit le texte de transparence */
+    background-clip: text; /* Pour les navigateurs modernes */
+    text-fill-color: transparent; /* Remplit le texte de transparence */
+}
+
+/* Style pour les listes */
+.container ul {
+    margin: 20px 0;
+    padding-left: 20px;
+    background: linear-gradient(90deg, #ab6bf4, #7c33d5, #5c2699);
+    -webkit-background-clip: text; /* Clip le dégradé au texte */
+    -webkit-text-fill-color: transparent; /* Remplit le texte de transparence */
+    background-clip: text; /* Pour les navigateurs modernes */
+    text-fill-color: transparent; /* Remplit le texte de transparence */
+}
+
+.container li {
+    margin: 5px 0;
 }
 
 .background-button {
@@ -333,4 +379,3 @@ h1 {
 .card-button:hover {
     background-color: #0056b3;
 }
-
